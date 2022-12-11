@@ -1,0 +1,11 @@
+{
+  "platform": "django",
+  "app": "loico",
+
+  "disks": [
+    {
+      "name": "my-disk",
+      "mountTo": "media"
+    }
+  ]
+}

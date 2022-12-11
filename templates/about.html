@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>LOICO - شرکت نواندیشان فراساحل لیان</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Construction Html5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <!-- Favicon
+  ================================================== -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS
+  ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <!-- slick Carousel -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="body-inner">
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <ul class="top-info text-center text-md-left">
+                        <li><i class="fas fa-map-marker-alt"></i>
+                            <p class="info-text">تهران, مرزداران،خیابان البرز،کوچه البرزیکم،پلاک 46,طبقه دوم، واحد 2</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--/ Top info end -->
+                <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a title="Facebook" href="#">
+                                <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                            <a title="Twitter" href="#">
+                                <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                            </a>
+                            <a title="Instagram" href="#">
+                                <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                            </a>
+                            <a title="Linkdin" href="#">
+                                <span class="social-icon"><i class="fab fa-github"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/ Top social end -->
+            </div>
+            <!--/ Content row end -->
+        </div>
+        <!--/ Container end -->
+    </div>
+    <!--/ Topbar end -->
+    <!-- Header start -->
+    <header id="header" class="header-one">
+        <div class="bg-white">
+            <div class="container">
+                <div class="logo-area">
+                    <div class="row align-items-center">
+                        <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                            <a class="d-block" href="{% url 'index' %}">
+                                <img loading="lazy" src="/media/images/logo.png" alt="LOICO">
+                            </a>
+                        </div><!-- logo end -->
+
+                        <div class="col-lg-9 header-right">
+                            <ul class="top-info-box">
+                                <li>
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title">تماس با ما</p>
+                                            <p class="info-box-subtitle">(+98) 021-44285632-33 <br>(+98) 021-44285634فکس</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title">ایمیل</p>
+                                            <p class="info-box-subtitle">info@loico.ir</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="info-box last">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title">گواهینامه بین المللی</p>
+                                            <p class="info-box-subtitle">ISO 45001:2018</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header-get-a-quote">
+                                    <a class="btn btn-primary" href="{% url 'contact' %}">ارتباط با ما</a>
+                                </li>
+                            </ul><!-- Ul end -->
+                        </div><!-- header right end -->
+                    </div><!-- logo area end -->
+
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div>
+        <div class="site-navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="navbar-collapse" class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav mr-auto">
+                                    <li class="nav-item dropdown active">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">خانه <i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li class="active"><a href="{% url 'index' %}">خانه اول</a></li>
+                                            <li><a href="{% url 'index-2' %}">خانه دوم</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">شرکت <i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="{% url 'about' %}">درباره ما</a></li>
+                                            <li><a href="{% url 'team' %}">چارت سازمانی</a></li>
+                                            <li><a href="{% url 'testimonials' %}">گواهینامه ها</a></li>
+                                            <li><a href="{% url 'faq' %}">رضایت نامه ها</a></li>
+                                            <li><a href="{% url 'pricing' %}">دریافت کاتالوگ</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">پروژه ها <i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="{% url 'projects' %}">کلیه پروژه ها</a></li>
+                                            <li><a href="{% url 'projects-single' %}">پروژه های بزرگ</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">خدمات <i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="{% url 'services' %}">خدمات</a></li>
+                                            <li><a href="{% url 'services-single' %}">خدمات ویژه</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">گالری<i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="{% url 'typography' %}">فیلم ها</a></li>
+                                            <li><a href="{% url '404' %}">404</a></li>
+                                            <li class="dropdown-submenu">
+                                                <!--
+                                                <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Parent
+                                                    Menu</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#!">Child Menu 1</a></li>
+                                                    <li><a href="#!">Child Menu 2</a></li>
+                                                    <li><a href="#!">Child Menu 3</a></li>
+                                                </ul>
+                                                -->
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">اخبار<i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                          <!--  <li><a href="news-left-sidebar.html">News Left Sidebar</a></li>
+                                            <li><a href="news-right-sidebar.html">News Right Sidebar</a></li>-->
+                                            <li><a href="{% url 'news-single' %}">اخبار ما</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">ارتباط با ما</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <!--/ Col end -->
+                </div>
+                <!--/ Row end -->
+                <div class="nav-search">
+                    <span id="search"><i class="fa fa-search"></i></span>
+                </div><!-- Search end -->
+                <div class="search-block" style="display: none;">
+                    <label for="search-field" class="w-100 mb-0">
+                        <input type="text" class="form-control" id="search-field"
+                               placeholder="Type what you want and enter">
+                    </label>
+                    <span class="search-close">&times;</span>
+                </div><!-- Site search end -->
+            </div>
+            <!--/ Container end -->
+
+        </div>
+        <!--/ Navigation end -->
+    </header>
+
+    <div id="banner-area" class="banner-area" style="background-image:url(/media/images/banner/banner7.jpg)">
+        <div class="banner-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-heading">
+                            <h1 class="banner-title">درباره ما</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                                    <li class="breadcrumb-item"><a href="#">شرکت</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">درباره ما</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div><!-- Col end -->
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div><!-- Banner text end -->
+    </div><!-- Banner area end -->
+
+     <section class="call-to-action-box no-padding">
+        <div class="container">
+            <div class="action-style-box">
+                <div class="row align-items-center">
+                    <div class="col-md-8 text-center text-md-left">
+                        <div class="call-to-action-text">
+                            <h3 class="action-title"></h3>
+                            <div class="container" dir="auto" align="center"><strong>شرکت نو اندیشان فراساحل لیان(LOICO)</strong></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+                        <div class="call-to-action-btn">
+                            <a class="btn btn-dark"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main-container" class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="column-title">(LOICO)ما ميتوانيم شريک بلندمدت شما باشيم</h3>
+                    <p>شرکت نواندیشان فراساحل لیان یک شرکت کاملا خصوصی است که دارای پایه یک رشته نفت و گاز می
+                        باشد و خدمات مهندسی، خرید، ساخت و نصب (EPCI) در صنایع نفت، گاز و پتروشیمی ارائه می‌نماید. این
+                        شرکت با تکیه بر مدیران شایسته خود و همچنین مهندسانی بسیار آگاه و مطلع و با برخورداری از سوابق
+                        درخشان در انجام پروژه‌های قبلی، برخورداری از نیروی انسانی متخصص و همچنین در اختیار داشتن بهترین
+                        تجهیزات و تکنولوژی‌های روز دنیا، به سرعت رشد نموده و امروز مفتخریم که یکی از بهترین شرکت‌های
+                        پیمانکاری برای کارفرمایان خود در ایران و حتی منطقه هستیم. تجربه ما در ارائه و اجرای پیچیده‌ترین
+                        راه‌حل‌های مهندسی در صنعت نفت و گاز، این اطمینان را در کارفرمایان محترم ما ایجاد می‌کند که شرکت
+                        نواندیشان فراساحل لیان، بهترین پیمانکار موجود برای اجرای پروژه‌های بزرگ و پرچالش در صنایع نفت،
+                        گاز و پتروشیمی می‌باشد..</p>
+                    <blockquote><p>شرکت نواندیشان فراساحل لیان از تجربه و تخصصی طولانی مدت در صنعت نفت و گاز برخوردار
+                        است ولی ما از همان ابتدا، خودمان را با متعهد نشان دادن به ایجاد روابط کاری بلندمدت از دیگران
+                        متمایز کرده‌ایم. در واقع در جهانی که به سرعت در حال پیشرفت و تغییر است، انتخاب یک شرکت پیمانکاری
+                        مناسب در صنعت نفت و گاز که بتواند با سازمان شما به‌صورتی طولانی مدت فعالیت نماید، بسیار سخت است.
+                        با این وجود در دو دهه گذشته، ما مصمم بوده‌ایم تا روابط کاری بلندمدتی را برقرار کنیم، خدمات خود
+                        را متحول کنیم و بهترین راهکارهای موجود در بازار را به کارفرمایان خود ارائه نمائیم.</p>
+                    </blockquote>
+                    <p>برخورداری مدیران این شرکت از سال‌ها تجربه در اجرای پروژه‌های مختلف، منجر به برقراری ارتباطات
+                        ارزشمندی با بسیاری از شرکت‌های متخصص شده و سبب شده تا ما بتوانیم به روزترین خدمات و دانش فنی را
+                        در حوزه فعالیت‌هایمان به کارفرمایان محترم خود ارائه نمائیم. شرکت نواندیشان فراساحل لیان صرفنظر
+                        از اینکه به داشتن چنین روابط و ارتباطاتی با بهترین شرکت‌های صنعتی در حوزه کاری فعالیت‌های خود
+                        افتخار می‌نماید، پیوسته در تلاش است تا بهترین راه‌حل‌های جهانی را به کارفرمایان خود ارائه نماید.
+                        به همین علت است که وقتی کارفرمایان ما با چالشی در زمینه‌های مهندسی، خرید، ساخت و نصب (EPCI)
+                        مواجه می‌شوند، برای مشاوره به سراغ ما می‌آیند.
+
+                        شرکت نواندیشان فراساحل لیان از زمان شروع فعالیت‌های خود با کارفرمایان مطرحی در پروژه‌های بخش
+                        خشکی و فراساحلی درداخل کشور کار کرده است. ما در طول این فعالیت‌ها سابقه بسیار خوبی از خود در
+                        تحویل پروژه‌ها در موعد مقرر، طبق بودجه و با رعایت بالاترین استانداردها بجا گذاشته‌ایم. این در
+                        حالی است که یکی دیگر از عوامل موفقیت شرکت نواندیشان فراساحل لیان، رضایت کارفرمایان ما می‌باشد
+                        چرا که کارکنان ما با سهیم دانستن خودشان در ارزش‌های شرکت، چنان سرویس‌ها و خدماتی را به
+                        کارفرمایان ارائه می‌دهند که بسیار بیشتر از حد انتظارات کارفرمایان محترم ما می‌باشد.
+
+                        ما در شرکت نواندیشان فراساحل لیان، هیچوقت به بزرگ یا کوچک بودن پروژه‌ای که به ما واگذار شده، فکر
+                        نمی‌کنیم؛ در عوض سعی می‌کنیم خدمات EPCI خود را در قالب بهترین سرویس‌ها و عملکردی استثنایی ارائه
+                        نمائیم. ما بر این باوریم که رعایت بالاترین استانداردها در فرآیند طراحی، مدیریت پروژه و فرایند
+                        نصب برای موفقیت شرکت بسیار ضروری است. در همین راستا ما تجهیزات و امکانات خود را توسط یک نهاد
+                        ممیزی معتبر و مطابق با سیستم مدیریت کیفیت ISO 9001:2015 ، سیستم مدیریت محیط زیست ISO 14001:2015
+                        ، سیستم مدیریت کیفیت برای سازمان های عرضه کننده کالا و خدمات صنایع نفت ، پتروشیمی و گاز طبیعی
+                        ISO/TS 29001:2010 ، سیستم مدیریت ایمنی و بهداشت شغلی ISO 45001:2018 و سیستم مدیریت H.S.E. به
+                        تایید می رسانیم</p>
+
+                </div><!-- Col end -->
+
+                <div class="col-lg-6 mt-5 mt-lg-0">
+
+                    <div id="page-slider" class="page-slider small-bg">
+
+                        <div class="item" style="background-image:url(/media/images/slider-pages/slide-page1.jpg)">
+                            <div class="container">
+                                <div class="box-slider-content">
+                                    <div class="box-slider-text">
+                                        <h2 class="box-slide-title">مدیریت</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Item 1 end -->
+
+                        <div class="item" style="background-image:url(/media/images/slider-pages/slide-page2.jpg)">
+                            <div class="container">
+                                <div class="box-slider-content">
+                                    <div class="box-slider-text">
+                                        <h2 class="box-slide-title">تجربه</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Item 1 end -->
+
+                        <div class="item" style="background-image:url(/media/images/slider-pages/slide-page3.jpg)">
+                            <div class="container">
+                                <div class="box-slider-content">
+                                    <div class="box-slider-text">
+                                        <h2 class="box-slide-title">کارایی</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Item 1 end -->
+                    </div><!-- Page slider end-->
+                </div><!-- Col end -->
+            </div><!-- Content row end -->
+        </div><!-- Container end -->
+    </section><!-- Main container end -->
+
+
+    <section id="facts" class="facts-area dark-bg">
+        <div class="container">
+            <div class="facts-wrapper">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 ts-facts">
+                        <div class="ts-facts-img">
+                            <img loading="lazy" src="/media/images/icon-image/fact1.png" alt="facts-img">
+                        </div>
+                        <div class="ts-facts-content">
+                            <h2 class="ts-facts-num"><span class="counterUp" data-count="21">0</span></h2>
+                            <h3 class="ts-facts-title">پروژه های انجام شده</h3>
+                        </div>
+                    </div><!-- Col end -->
+
+                    <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
+                        <div class="ts-facts-img">
+                            <img loading="lazy" src="/media/images/icon-image/fact2.png" alt="facts-img">
+                        </div>
+                        <div class="ts-facts-content">
+                            <h2 class="ts-facts-num"><span class="counterUp" data-count="535">0</span></h2>
+                            <h3 class="ts-facts-title"> کارکنان</h3>
+                        </div>
+                    </div><!-- Col end -->
+
+                    <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+                        <div class="ts-facts-img">
+                            <img loading="lazy" src="/media/images/icon-image/fact3.png" alt="facts-img">
+                        </div>
+                        <div class="ts-facts-content">
+                            <h2 class="ts-facts-num"><span class="counterUp" data-count="4365">0</span></h2>
+                            <h3 class="ts-facts-title">ساعت کاری</h3>
+                        </div>
+                    </div><!-- Col end -->
+                                     <!-- <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+                                          <div class="ts-facts-img">
+                                              <img loading="lazy" src="images/icon-image/fact4.png" alt="facts-img">
+                                          </div>
+
+                                          <div class="ts-facts-content">
+                                              <h2 class="ts-facts-num"><span class="counterUp" data-count="44">0</span></h2>
+                                              <h3 class="ts-facts-title">تجربه کشورها</h3>
+                                          </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="ts-team" class="ts-team">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <!--
+                <h2 class="section-title">خدمات با کیفیت</h2>
+                <h3 class="section-sub-title">تیم حرفه ای</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="team-slide" class="team-slide">
+                    <div class="item">
+                        <div class="ts-team-wrapper">
+                            <div class="team-img-wrapper">
+                                <img loading="lazy" class="w-100" src="images/team/team1.jpg" alt="team-img">
+                            </div>
+                            <div class="ts-team-content">
+                                <h3 class="ts-name">Nats Stenman</h3>
+                                <p class="ts-designation">Chief Operating Officer</p>
+                                <p class="ts-description">Nats Stenman began his career in construction with boots
+                                    on the ground</p>
+                                <div class="team-social-icons">
+                                    <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="ts-team-wrapper">
+                            <div class="team-img-wrapper">
+                                <img loading="lazy" class="w-100" src="images/team/team2.jpg" alt="team-img">
+                            </div>
+                            <div class="ts-team-content">
+                                <h3 class="ts-name">Angela Lyouer</h3>
+                                <p class="ts-designation">Innovation Officer</p>
+                                <p class="ts-description">Nats Stenman began his career in construction with boots
+                                    on the ground</p>
+                                <div class="team-social-icons">
+                                    <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="ts-team-wrapper">
+                            <div class="team-img-wrapper">
+                                <img loading="lazy" class="w-100" src="images/team/team3.jpg" alt="team-img">
+                            </div>
+                            <div class="ts-team-content">
+                                <h3 class="ts-name">Mark Conter</h3>
+                                <p class="ts-designation">Safety Officer</p>
+                                <p class="ts-description">Nats Stenman began his career in construction with boots
+                                    on the ground</p>
+                                <div class="team-social-icons">
+                                    <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                </div
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="ts-team-wrapper">
+                            <div class="team-img-wrapper">
+                                <img loading="lazy" class="w-100" src="images/team/team4.jpg" alt="team-img">
+                            </div>
+                            <div class="ts-team-content">
+                                <h3 class="ts-name">Ayesha Stewart</h3>
+                                <p class="ts-designation">Finance Officer</p>
+                                <p class="ts-description">Nats Stenman began his career in construction with boots
+                                    on the ground</p>
+                                <div class="team-social-icons">
+                                    <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="ts-team-wrapper">
+                            <div class="team-img-wrapper">
+                                <img loading="lazy" class="w-100" src="images/team/team5.jpg" alt="team-img">
+                            </div>
+                            <div class="ts-team-content">
+                                <h3 class="ts-name">Dave Clarkte</h3>
+                                <p class="ts-designation">Civil Engineer</p>
+                                <p class="ts-description">Nats Stenman began his career in construction with boots
+                                    on the ground</p>
+                                <div class="team-social-icons">
+                                    <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="ts-team-wrapper">
+                            <div class="team-img-wrapper">
+                                <img loading="lazy" class="w-100" src="images/team/team6.jpg" alt="team-img">
+                            </div>
+                            <div class="ts-team-content">
+                                <h3 class="ts-name">Elton Joe</h3>
+                                <p class="ts-designation">Site Supervisor</p>
+                                <p class="ts-description">Nats Stenman began his career in construction with boots
+                                    on the ground</p>
+                                <div class="team-social-icons">
+                                    <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
+                                    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                </div>-->
+            </div>
+        </div>
+    </div>
+
+</section>
+   <footer id="footer" class="footer bg-overlay">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                        <h3 class="widget-title">درباره ما</h3>
+                        <img loading="lazy" class="footer-logo" src="/media/images/logo.png" alt="Constra">
+                        <p>شرکت نواندیشان فراساحل لیان یک شرکت کاملا خصوصی است که دارای پایه یک رشته نفت و گاز
+                            می باشد و خدمات مهندسی، خرید، ساخت و نصب (EPCI) در صنایع نفت، گاز و پتروشیمی ارائه می‌نماید.
+                            این شرکت با تکیه بر مدیران شایسته خود و همچنین مهندسانی بسیار آگاه و مطلع و با برخورداری از
+                            سوابق درخشان در انجام پروژه‌های قبلی، برخورداری از نیروی انسانی متخصص و همچنین در اختیار
+                            داشتن بهترین تجهیزات و ...</p>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#" aria-label="Facebook"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" aria-label="Twitter"><i
+                                        class="fab fa-twitter"></i></a>
+                                </li>
+                                <li><a href="#" aria-label="Instagram"><i
+                                        class="fab fa-instagram"></i></a></li>
+                                <li><a href="#" aria-label="Github"><i
+                                        class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div><!-- Footer social end -->
+                    </div><!-- Col end -->
+
+                    <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                        <h3 class="widget-title">ساعات کاری</h3>
+                        <div class="working-hours">
+                            ما 7 روز در هفته کار می کنیم، هر روز به استثنای تعطیلات بزرگ.اگر
+                            شرایط اضطراری دارید، با خط تلفن و فرم تماس با ما تماس بگیرید.
+                            <br><br> شنبه - پنجشنبه: <span class="text-right">10:00 - 16:00 </span>
+                            <br> جمعه: <span class="text-right">12:00 - 15:00</span>
+                            <br> تعطیلات: <span class="text-right">09:00 - 12:00</span>
+                        </div>
+                    </div><!-- Col end -->
+                   <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                        <h3 class="widget-title">Services</h3>
+                        <ul class="list-arrow">
+                            <li><a href="service-single.html">Pre-Construction</a></li>
+                            <li><a href="service-single.html">General Contracting</a></li>
+                            <li><a href="service-single.html">Construction Management</a></li>
+                            <li><a href="service-single.html">Design and Build</a></li>
+                            <li><a href="service-single.html">Self-Perform Construction</a></li>
+                        </ul>
+                    </div>-->
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div><!-- Footer main end -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="copyright-info text-center">
+              <span>Copyright &copy; <script>
+                  document.write(new Date().getFullYear())
+                </script>طراحی و توسعه توسط: hamidnikuye65@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="copyright-info text-center">
+                            <span>ساخته شده توسط: حمید نیکوئی</span>
+                            <br>
+                            <span>.تمامی حقوق این وبسایت محفوط و متعلق به شرکت نو اندیشان فراساحل لیان می باشد</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="footer-menu text-center">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="{% url 'about' %}">درباره ما</a></li>
+                                <li><a href="{% url 'team' %}">چارت سازمانی</a></li>
+                                <li><a href="{% url 'faq' %}">رضایت نامه ها</a></li>
+                               <!-- <li><a href="news-left-sidebar.html">وبلاگ</a></li>-->
+                                <li><a href="{% url 'pricing' %}">دریافت کاتالوگ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- Row end -->
+
+                <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+                    <button class="btn btn-primary" title="Back to Top">
+                        <i class="fa fa-angle-double-up"></i>
+                    </button>
+                </div>
+
+            </div><!-- Container end -->
+        </div><!-- Copyright end -->
+    </footer><!-- Footer end -->
+
+
+<!-- Javascript Files
+================================================== -->
+
+<!-- initialize jQuery Library -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap jQuery -->
+<script src="plugins/bootstrap/bootstrap.min.js" defer></script>
+<!-- Slick Carousel -->
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/slick/slick-animation.min.js"></script>
+<!-- Color box -->
+<script src="plugins/colorbox/jquery.colorbox.js"></script>
+<!-- shuffle -->
+<script src="plugins/shuffle/shuffle.min.js" defer></script>
+
+
+<!-- Google Map API Key-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+<!-- Google Map Plugin-->
+<script src="plugins/google-map/map.js" defer></script>
+
+<!-- Template custom -->
+<script src="js/script.js"></script>
+
+<!-- Body inner end -->
+</body>
+
+</html>
